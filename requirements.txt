@@ -1,0 +1,12 @@
+matplotlib
+seaborn
+python-bidi
+arabic_reshaper
+os
+sys
+scipy
+pandas
+numpy
+kagglehub
+ydata_profiling
+ipyvizzu

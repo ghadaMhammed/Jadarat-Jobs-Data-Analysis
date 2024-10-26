@@ -1,9 +1,13 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import sys
+import os
 import seaborn as sns
 from bidi.algorithm import get_display  # Fixes Arabic display
 import arabic_reshaper  # Reshapes Arabic characters for display
-from .package import Jadarat_Jobs as jb
+# Add the parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from package import Jadarat_Jobs as jb
 
 # Title and Introduction
 st.title("مقدمة: فهم سوق العمل السعودي للخريجين الجدد (جدرات)" )

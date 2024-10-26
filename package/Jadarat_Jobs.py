@@ -3,10 +3,6 @@
 
 # In[434]:
 
-
-get_ipython().system('pip install ipyvizzu; ydata_profiling; arabic_reshaper; python-bidi')
-
-
 # In[435]:
 
 
@@ -21,9 +17,6 @@ from ipyvizzu import Chart, Data, Config, Style
 from bidi.algorithm import get_display  # Fixes Arabic display
 import arabic_reshaper  # Reshapes Arabic characters for display
  
-## This statement allows the visuals to render within your Jupyter Notebook.
-get_ipython().run_line_magic('matplotlib', 'inline')
-
 
 # ## Loading the data
 # We can now load the dataset into pandas using the read_csv() function. This converts the CSV file into a Pandas dataframe.
