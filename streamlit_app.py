@@ -8,10 +8,10 @@ import arabic_reshaper  # Reshapes Arabic characters for display
 import pandas as pd
 import numpy as np
 
-
-job_opportunities_df = pd.read_csv(r"C:\Users\Ghada\Desktop\Ghada Mohammed lab 5\Usecase-5\job_opportunities_df.csv")
-avg_salary_fresh_grad_df = pd.read_csv(r"C:\Users\Ghada\Desktop\Ghada Mohammed lab 5\Usecase-5\avg_salary_fresh_grad_df.csv")
-no_exp_comp_type_df = pd.read_csv(r"C:\Users\Ghada\Desktop\Ghada Mohammed lab 5\Usecase-5\no_exp_comp_type_df.csv")
+#load data
+job_opportunities_df = pd.read_csv(os.path.join(os.getcwd(),"job_opportunities_df.csv"))
+avg_salary_fresh_grad_df = pd.read_csv(os.path.join(os.getcwd(),"avg_salary_fresh_grad_df.csv"))
+no_exp_comp_type_df = pd.read_csv(os.path.join(os.getcwd(),"no_exp_comp_type_df.csv"))
 
 # Title and Introduction
 st.title("مقدمة: فهم سوق العمل السعودي للخريجين الجدد (جدرات)" )
@@ -82,7 +82,7 @@ st.markdown("""
             """
              )
 ###CHART
-st.bar_chart(data=no_exp_comp_type_df, x="Company Type", y="Number of posts",x_label="نوع الشركة",y_label="عدد الوظائف",)
+st.bar_chart(data=no_exp_comp_type_df, x="Company Type", y="Number of posts",x_label="نوع الشركة",y_label="عدد الوظائف")
 
 st.markdown(
     """
