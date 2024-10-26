@@ -27,9 +27,10 @@ import arabic_reshaper  # Reshapes Arabic characters for display
 #Read in the csv file and convert to a Pandas dataframe
 import kagglehub
 import os
-# Download latest version
-path = kagglehub.dataset_download("moayadalkhozayem/job-postings-in-saudi-arabia")
-file = os.listdir(path)
+if __name__ == "__main__":
+ # Download latest version
+ path = kagglehub.dataset_download("moayadalkhozayem/job-postings-in-saudi-arabia")
+ file = os.listdir(path)
 
 
 # In[437]:
@@ -698,7 +699,3 @@ plt.show()
 
 
 # In[ ]:
-
-
-
-
